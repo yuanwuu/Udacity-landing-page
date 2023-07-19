@@ -1,0 +1,292 @@
+/* color ref:https://colorpalettes.net/color-palette-4260/
+
+#45230f - dk brown
+#955f31 - med. brown
+#204d48 - dk evergreen
+#233237 - hunter green
+#3b555d - dusty blue grn teal
+#a9b99f - mint
+
+img ref: 
+1. https://whimsyandwow.com/wp-content/uploads/2018/02/latte-infographic-1.jpg
+
+2. https://cdn4.vectorstock.com/i/1000x1000/55/78/latte-art-top-view-icon-set-vector-23825578.jpg
+
+3. https://cdn2.vectorstock.com/i/1000x1000/85/86/coffee-mug-top-view-cappuccino-espresso-latte-vector-23908586.jpg
+
+4. https://cdn2.vectorstock.com/i/1000x1000/18/41/realistic-coffee-cup-top-view-hot-latte-vector-32011841.jpg
+
+*/
+
+/* * {
+    margin: 0 auto;
+} */
+
+body {
+    display: flex;
+    flex-direction: column;  
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+
+
+/* ---------------------- UNIVERSAL ----------------------  */
+/* ul {
+    padding-inline-start: 0;
+    padding: 0 60px 0 60px;
+} */
+li {
+    line-height: 2rem;
+    list-style-type:none;
+}
+button {
+    /* background-color: #955f31; */
+    background-color: #88957f;
+    color: white;
+    border-radius: 100px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    font-size: large;
+}
+.logo {
+    width: auto;
+    height: 50px;
+}
+h1{
+    margin:0;
+    font-size: 3rem;
+    line-height: 200%;
+    color:#233237;
+}
+h2 {
+    line-height: 4rem;
+}
+p {
+    color:#45230f;
+    font-size: 1.25rem;
+    line-height: 150%;
+}
+a {
+    list-style-type:none;
+    text-transform: uppercase;
+}
+
+/* ---------------------- NAV ----------------------  */
+nav {
+    z-index: 10;
+    width: 100%;
+    height: 10%;
+    top:0px;
+    background-color: white;
+    position:fixed;
+    align-items: center;
+    justify-content: space-around;
+}
+#nav-container {
+    /* width: 100%; */
+    display: flex;
+    flex-direction:row;
+}
+#nav-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+/* ---------------------- HERO ----------------------  */
+
+.hero { 
+    background-color: #95603139;
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    height: auto;
+    padding:10%;
+    /* border: 1px solid green; */
+}
+.hero-content {
+    width: 50%;
+}
+
+.hero-img {
+    width:auto;
+    height: 500px;
+}
+
+.sm-drink-logo {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* ---------------------- RANDOM DRINKS ----------------------  */
+
+.random-drinks {
+    height: 30vh;
+    padding: 10%;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.random-drinks-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    align-items: left;
+    margin: 0 5% 0 0 ;
+    padding: 0 0 0 0;
+}
+
+#card-section{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#card {
+    z-index: 2;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    /* border: 1px solid green; */
+} 
+.drink-icon{
+    width: 60%;
+    height: auto;
+    position:absolute;
+    left: 30%;
+}
+.drink-content {
+    position: absolute;
+    top: 40%;
+    text-align: left;
+    margin: 10%;    
+} 
+.drink-content >p {
+    line-height: 120%;
+    padding: 10% 0 0 0 ;
+}
+.price { 
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 150px;
+    height: 45px;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+.sq {
+    position:absolute;
+    height: 300px;
+    width: 300px;
+    background-color: #95603139;
+    border-radius: 50px;
+    z-index: -1;
+    top: 20%;
+} 
+
+
+
+
+
+
+/* ---------------------- ABOUT US ----------------------  */
+.about {
+    background-color: #95603139;
+    padding: 10%;
+    text-align: left;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+.about-content{
+    display: flex;
+    flex-direction: row;
+}
+.about-content > img{
+    width: 50%;
+    height: auto;
+    border-radius: 100px;
+    margin: 0 5% 0 5%;
+    object-fit: cover;
+}
+.mini-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+}
+
+.cafe-mini-img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+
+
+
+
+/* ---------------------- CONTACT US ----------------------  */
+.contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #a9b99f;
+    color:white;
+    padding: 10%;
+    height: 10vh;
+}
+form{
+    display: inline;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+
+
+/* ---------------------- FOOTER ----------------------  */
+footer {
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* border: 1px solid green; */
+    position: relative;
+}
+
+
+address {
+    display: flex;
+    flex-direction: row;
+    /* width: 30%; */
+    height: auto;
+    margin: 0;
+}
+
+.scroll-to-top{
+    width: 80px;
+    height: 80px;
+    background-color:transparent;
+    border: 3px solid #45230fb3;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.scroll-to-top > p {
+    position: fixed;
+    bottom: 25px;
+    right: 40px;
+    color:#45230f;
+    font-weight: bolder;
+}
