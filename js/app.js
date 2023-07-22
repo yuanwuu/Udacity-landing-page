@@ -2,8 +2,8 @@
 const navList = document.querySelector('ul');
 
 // 2. Create a list of text nodes from the navItem array:
-const navItem = ['home', 'about us', 'contact us'];
-const sections = ['section-1','section-2','section-4']
+const navItem = ['home','menu','about us', 'contact us'];
+const sections = ['section-1','section-2','section-3','section-4']
 
 navItem.forEach((el,index)=> {
   const anchorItem = document.createElement('a');
@@ -14,11 +14,30 @@ navItem.forEach((el,index)=> {
 
     navList.appendChild(anchorItem); 
     anchorItem.appendChild(topNavLi); 
-})
+  })
 
 
 
+//------------------------ .active() & .getBoundingClientRect()  ------------------------
+function addActiveListener(sectionId) {
+  const section = document.querySelector(`#${sectionId}`);
+  const sectionLink = document.querySelector(`a[href="#${sectionId}"]`);
 
+  window.addEventListener('scroll', function() {
+    const sectionTop = section.getBoundingClientRect().top;
+    const windowInnerHeight = window.innerHeight;
+
+    if (sectionTop >= 0 && sectionTop <= windowInnerHeight) {
+      sectionLink.classList.add('active'); // Add the "active" class to the link
+    } else {
+      sectionLink.classList.remove('active'); // Remove the "active" class if not in view
+    }
+  });
+}
+
+sections.forEach((sectionId) => {
+  addActiveListener(sectionId);
+});
 
 
 
@@ -35,7 +54,6 @@ scroll.appendChild(topWriting)
 scroll.addEventListener('click', (evt) =>{
   topOfPage.scrollIntoView({behavior:'smooth'})
 })
-
 
 
 //------------------------ Hover ------------------------ 
@@ -66,12 +84,24 @@ capListItem.forEach(item => {
 
 
 
-//------------------------ .active() & .getBondingClientRect() ------------------------ 
-
 
 
 //------------------------ .perventDefault() ------------------------ 
 const subscribe = document.querySelector('form')
+subscribe.addEventListener('submit', (evt) => {
+  evt.preventDefault()
+  subscribe.style.display = 'none'
+
+  setTimeout(() => {
+    const subMsg = document.createElement('p')
+    subMsg.textContent = 'Thank You for subscribing! :)'
+    subMsg.style.color = 'white'
+    const subContainer = document.querySelector('.contact')
+    subContainer.appendChild(subMsg)
+  }, 1000);
+
+})
+
 
 
 

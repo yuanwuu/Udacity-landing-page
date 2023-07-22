@@ -69,9 +69,15 @@ p {
     line-height: 150%;
 }
 a {
-    list-style-type:none;
     text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
 }
+
+.active {
+    color:#3b555d; 
+    background-color: rgba(255, 228, 196, 0.654);
+  }
 
 /* ---------------------- NAV ----------------------  */
 nav {
@@ -94,6 +100,8 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    /* padding: 10px;
+    margin: 10px; */
 }
 
 
@@ -109,6 +117,7 @@ nav {
     padding:10%;
     /* border: 1px solid green; */
 }
+
 .hero-content {
     width: 50%;
 }
@@ -170,7 +179,7 @@ nav {
 } 
 .drink-content >p {
     line-height: 120%;
-    padding: 10% 0 0 0 ;
+    /* padding: 0% 0 0 0 ; */
 }
 .price { 
     position: absolute;
@@ -244,12 +253,14 @@ nav {
     padding: 10%;
     height: 10vh;
 }
-form{
-    display: inline;
-    /* display: flex; */
-    /* flex-direction: column; */
+.contact >p {
+    text-align: center;
 }
 
+form{
+    display: inline;
+    margin:auto;
+}
 
 
 /* ---------------------- FOOTER ----------------------  */
