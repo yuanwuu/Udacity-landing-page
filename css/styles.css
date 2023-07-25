@@ -1,24 +1,3 @@
-/* color ref:https://colorpalettes.net/color-palette-4260/
-
-#45230f - dk brown
-#955f31 - med. brown
-#204d48 - dk evergreen
-#233237 - hunter green
-#3b555d - dusty blue grn teal
-#a9b99f - mint
-
-img ref: 
-1. https://whimsyandwow.com/wp-content/uploads/2018/02/latte-infographic-1.jpg
-
-2. https://cdn4.vectorstock.com/i/1000x1000/55/78/latte-art-top-view-icon-set-vector-23825578.jpg
-
-3. https://cdn2.vectorstock.com/i/1000x1000/85/86/coffee-mug-top-view-cappuccino-espresso-latte-vector-23908586.jpg
-
-4. https://cdn2.vectorstock.com/i/1000x1000/18/41/realistic-coffee-cup-top-view-hot-latte-vector-32011841.jpg
-
-*/
-
-
 body {
     display: flex;
     flex-direction: column;  
@@ -69,6 +48,7 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     padding: 10px;
+    color:black;
 }
 
 .active {

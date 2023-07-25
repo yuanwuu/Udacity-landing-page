@@ -2,8 +2,8 @@
 const navList = document.querySelector('ul');
 
 // 2. Create a list of text nodes from the navItem array:
-const navItem = ['home','menu','about us', 'contact us'];
-const sections = ['section-1','section-2','section-3','section-4']
+const navItem = ['menu','about us','contact us','location'];
+const sections = ['section-2','section-3','section-4','section-5']
 
 navItem.forEach((el,index)=> {
   const anchorItem = document.createElement('a');
